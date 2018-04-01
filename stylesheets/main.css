@@ -1,0 +1,66 @@
+html, body {
+    display: flex;
+    flex-direction: column;
+    font-family: 'Lato', sans-serif;
+}
+
+.hidden {
+    display: none;
+}
+
+.top-header {
+    display: flex;
+    justify-content: center;
+    transition: all ease .3s;
+    height: 55px;
+}
+
+.column-container {
+    display: flex;
+    flex-direction: column;
+}
+
+.row-container {
+    display: flex;
+}
+
+.top-header .column-container {
+    width: 100%;
+    text-align: center;
+    align-items: center;
+    justify-content: space-around;
+    font-size: 12px;
+    border-bottom: solid 1px rgb(206, 206, 206);
+}
+
+.top-header a {
+    text-decoration: none;
+    color: rgb(148, 148, 148);
+}
+
+.top-header a:hover {
+    color: rgb(22, 22, 82);
+    transition: all ease .3s;
+}
+
+.top-header .address {
+    display: none;
+}
+
+#nav {
+    padding: 5px;
+    align-items: center;
+}
+
+#company-name {
+    
+}
+
+.hamburger-button {
+    display: flex;
+    font-size: 20px;
+}
+
+.hamburger-button button {
+    color: rgb(148, 148, 148);
+}

@@ -11,25 +11,34 @@
     <title>Zimmerman Chiropractic</title>
 </head>
 <body>
-    <topheader class="top-header">
-        <div class="column-container">
-            <p class="address">349 Folly Road, Charleston, SC 29412</p>
-            <a href="mailto:info@zimchiro.com"><i class="fas fa-envelope"></i>   info@zimchiro.com</a>
-            <a href="tel:+18437958898"><i class="fas fa-phone"></i>   1-843-795-8898</a>
-        </div>
-    </topheader>
+    <div class="full-header-container">
+        <topheader class="top-header">
+            <div class="column-container">
+                <p class="address">349 Folly Road, Charleston, SC 29412</p>
+                <a href="mailto:info@zimchiro.com"><i class="fas fa-envelope"></i>   info@zimchiro.com</a>
+                <a href="tel:+18437958898"><i class="fas fa-phone"></i>   1-843-795-8898</a>
+            </div>
+        </topheader>
 
-    <nav id="nav" class="column-container">
-        <div id="company-name">
-            <h2>Zimmerman Chiropractic</h2>
+        <nav id="nav" class="column-container">
+            <div id="company-name">
+                <h2>Zimmerman Chiropractic</h2>
+            </div>
+            <div class="hamburger-button-container" data-hamburger-button>
+                <button class="hamburger-button" data-hamburger-bars>
+                    <i class="fas fa-bars"></i>
+                </button>
+            </div>
+        </nav>
+
+        <div class="nav-menu column-container" data-nav-menu>
+                <ul class="nav-items column-container">
+                    <li>About</li>
+                    <li>Services</li>
+                </ul>
         </div>
-        <div class="hamburger-button">
-            <button data-hamburger-button>
-                <i class="fas fa-bars" data-hamburger-inactive></i>
-                <i class="fas fa-bars hidden" data-hamburger-active></i>
-            </button>
-        </div>
-    </nav>
+        
+    </div>
     
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="scripts/main.js"></script>

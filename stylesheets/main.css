@@ -8,6 +8,8 @@ html, body {
     display: none;
 }
 
+/* HEADERS AND NAV WITH MENU */
+
 .full-header-container {
     position: relative;
     z-index: 0;
@@ -88,6 +90,7 @@ html, body {
 }
 
 .nav-menu {
+    background-color: white;
     transition: all ease .4s;
     position: absolute;
     z-index: 1;
@@ -97,7 +100,7 @@ html, body {
     width: 73%;
     border: solid black 1px;
     bottom: 1px;
-    right: 48px;
+    right: 46px;
 }
 
 .nav-items {
@@ -112,4 +115,45 @@ html, body {
 .nav-items li {
     text-decoration: none;
     list-style-type: none;
+}
+
+/* MAIN PAGE IMAGE */
+
+.happy-jumpers {
+    width: 100%;
+    position: relative;
+}
+
+.jumper-img {
+    max-width: 100%;
+    height: 300px;
+}
+
+.jumper-text-top {
+    font-size: 20px;
+    color: rgb(255, 255, 255);
+    position: absolute;
+    top: 2px;
+    left: 40px;
+    animation-name: jumper-top;
+    animation-duration: 2s;
+}
+
+.jumper-text-bottom {
+    color: rgb(241, 240, 255);
+    position: absolute;
+    font-size: 25px;
+    bottom: 40px;
+    right: 60px;
+    animation-name: jumper-top;
+    animation-duration: 2s;
+}
+
+@keyframes jumper-top {
+    from {
+        opacity: .01;
+    }
+    to {
+        opacity: 1;
+    }
 }

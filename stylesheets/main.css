@@ -85,26 +85,26 @@ html, body {
 }
 
 .translate-menu {
-    transform: translateY(102px);
+    transform: translateY(142px);
     transition: all ease .4s;
 }
 
 .nav-menu-container {
-    width: 70%;
     position: absolute;
     left: 50%;
     z-index: 3;
-    bottom: 3px;
+    bottom: 8px;
+    transition: all ease .4s;
 }
 
 .nav-menu {
     height: 100px;
     background-color: white;
-    transition: all ease .4s;
     position: relative;
     align-items: center;
     text-align: center;
-    border: solid black 1px;
+    box-shadow: 0 4px 3px rgb(51, 51, 51);
+    padding: 20px 50px;
     left: -50%;
 }
 
@@ -131,27 +131,38 @@ html, body {
 }
 
 .jumper-img {
-    max-width: 100%;
+    width: 100%;
     min-height: 300px;
+    max-height: 600px;
     z-index: 2;
 }
+
+.jumper-text-container {
+    position: absolute;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+/* 
+.jumper-text-container > * {
+    width: 350px;
+} */
 
 .jumper-text-top {
     font-size: 20px;
     color: rgb(255, 255, 255);
-    position: absolute;
-    top: 2px;
-    left: 40px;
     animation-name: jumper-top;
     animation-duration: 2s;
 }
 
 .jumper-text-bottom {
     color: rgb(241, 240, 255);
-    position: absolute;
     font-size: 25px;
-    bottom: 40px;
-    right: 60px;
     animation-name: jumper-top;
     animation-duration: 2s;
 }
@@ -162,5 +173,15 @@ html, body {
     }
     to {
         opacity: 1;
+    }
+}
+
+@media (min-width: 600px) {
+    .jumper-text-bottom {
+        font-size: 70px;
+    }
+
+    .jumper-text-top {
+        font-size: 55px;
     }
 }

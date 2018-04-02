@@ -76,12 +76,12 @@ html, body {
 
 .hamburger-button {
     color: rgb(148, 148, 148);
-    transition: all ease .3s;
+    transition: all ease .5s;
 }
 
 .rotated {
     transform: rotate(90deg);
-    transition: all ease .3s;
+    transition: all ease .5s;
 }
 
 .translate-menu {

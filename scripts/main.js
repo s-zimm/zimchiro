@@ -4,19 +4,6 @@ const $navMenu = $('[data-nav-menu]');
 const $jumperTop = $('[data-jumper-top]');
 const $jumperBottom = $('[data-jumper-bottom]');
 
-// Google Maps callback
-function initMap() {
-    var zimchiro = {lat: 32.7567389, lng: -80.0436666};
-    var map = new google.maps.Map(document.getElementById('map'), {
-      zoom: 4,
-      center: zimchiro
-    });
-    var marker = new google.maps.Marker({
-      position: zimchiro,
-      map: map
-    });
-}
-
 let clickHandlers = () => {
     $navBtn.click(() => {
         $navBtnBars.toggleClass('rotated');

@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.0/normalize.min.css">
-    <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Francois+One|Lato" rel="stylesheet">
     <script defer src="https://use.fontawesome.com/releases/v5.0.9/js/all.js" integrity="sha384-8iPTk2s/jMVj81dnzb/iFR2sdA7u06vHJyyLlAd4snFpCl/SnyUjRrbdJsw1pGIl" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="stylesheets/main.css">
     <title>Zimmerman Chiropractic</title>
@@ -46,11 +46,32 @@
         <img class="jumper-img" src="https://c2.staticflickr.com/6/5017/5428693024_3ab7a12bff_o.jpg" alt="Ready to change your life?">
         <div class="jumper-text-container">
             <p class="hidden" data-jumper-top>Are you ready...</p>
-            <h3 class="hidden" data-jumper-bottom>...to feel the difference?</h3>
+            <h3 class="hidden" data-jumper-bottom>...to <span class="feel">feel</span> the difference?</h3>
         </div>
+    </div>
+
+    <div class="column-container">
+        <div class="services-container">
+            <div class="service-image">
+                Chiropractic
+            </div>
+            <div class="service-image">
+                Massage
+            </div>
+            <div class="service-image">Braincore</div>
+            <div class="service-image">Vitamins</div>
+            <div class="service-image">Health</div>
+        </div>
+
+    </div>
+
+    <div id="map">
+
     </div>
     
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="scripts/main.js"></script>
+    <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAy3zLar3BIyAXkLYphCgW80qkfBGfQ744&callback=initMap">
+    </script>
 </body>
 </html>

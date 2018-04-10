@@ -1,5 +1,4 @@
 const $navBtn = $('[data-hamburger-button]');
-const $navBtnBars = $('[data-hamburger-bars]');
 const $navMenu = $('[data-nav-menu]');
 const $jumperTop = $('[data-jumper-top]');
 const $jumperBottom = $('[data-jumper-bottom]');
@@ -7,7 +6,7 @@ const $toTop = $('[data-to-top-button]');
 
 let clickHandlers = () => {
     $navBtn.click(() => {
-        $navBtnBars.toggleClass('rotated');
+        $navBtn.toggleClass('rotated');
         $navMenu.toggleClass('translate-menu');
     });
     $toTop.click(() => {

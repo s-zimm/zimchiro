@@ -9,6 +9,7 @@ html, body {
 }
 
 .to-top-button {
+    transition: all ease .3s;
     position: fixed;
     right: 10px;
     font-size: 35px;
@@ -16,6 +17,7 @@ html, body {
 }
 
 .to-top-button:hover {
+    transition: all ease .3s;
     color: black;
 }
 
@@ -89,9 +91,6 @@ html, body {
     display: flex;
     font-size: 20px;
     margin-bottom: 15px;
-}
-
-.hamburger-button {
     color: rgb(148, 148, 148);
     transition: all ease .5s;
 }
@@ -217,24 +216,18 @@ html, body {
     justify-content: space-around;
     padding: 40px 20px;
     background-color: rgb(240, 240, 240);
+    text-align: center;
     /* box-shadow: inset 0 2px 40px #c6e5ec, inset 0 -2px 2px white; */
 }
 
-.about-text-section {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-}
-
-.about-text-section h3 {
+.main-about-text h2 {
     font-size: 25px;
     font-weight: normal;
     font-family: 'Roboto Condensed', sans-serif;
     color: rgb(50, 79, 109);
 }
 
-.about-text-section p {
+.main-about-text p {
     color: #4f4f4f;
 }
 
@@ -246,6 +239,9 @@ html, body {
     justify-content: center;
     align-items: center;
     padding: 30px;
+    font-family: 'Roboto Condensed', sans-serif;
+    color: rgb(50, 79, 109);
+    text-align: center;
 }
 
 @keyframes jumper-top {
@@ -264,5 +260,39 @@ html, body {
 
     .jumper-text-top {
         font-size: 55px;
+    }
+}
+
+@media (min-width: 850px) {
+    .main-about-text {
+        flex-direction: row;
+        padding: 80px 30px;
+    }
+
+    .main-about-text h2 {
+        font-size: 50px;
+        font-weight: bold;
+        width: 15%;
+    }
+
+    .main-about-text p {
+        width: 72%;
+        font-size: 20px;
+    }
+
+    .map-container {
+        flex-direction: row;
+        padding: 80px 30px;
+    }
+
+    .map-container h2 {
+        font-size: 50px;
+        margin-left: 35px;
+    }
+
+    .to-top-button {
+        font-size: 65px;
+        right: 19px;
+        top: -11px;
     }
 }

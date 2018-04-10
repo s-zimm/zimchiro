@@ -3,12 +3,29 @@ const $navBtnBars = $('[data-hamburger-bars]');
 const $navMenu = $('[data-nav-menu]');
 const $jumperTop = $('[data-jumper-top]');
 const $jumperBottom = $('[data-jumper-bottom]');
+const $toTop = $('[data-to-top-button]');
 
 let clickHandlers = () => {
     $navBtn.click(() => {
         $navBtnBars.toggleClass('rotated');
         $navMenu.toggleClass('translate-menu');
     });
+    $toTop.click(() => {
+        window.scroll({
+            top: 0,
+            left: 0,
+            behavior: 'smooth'
+        });
+    });
+}
+
+let checkOffsetBottom = (topOrBottom, element) => {
+    switch (topOrBottom) {
+        case 'top':
+            return element.offset().top;
+        case 'bottom':
+            return element.offset().bottom;
+    }
 }
 
 let topJumperLoad = () => {

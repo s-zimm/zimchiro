@@ -8,6 +8,17 @@ html, body {
     display: none;
 }
 
+.to-top-button {
+    position: fixed;
+    right: 10px;
+    font-size: 35px;
+    color: rgb(209, 209, 209);
+}
+
+.to-top-button:hover {
+    color: black;
+}
+
 /* HEADERS AND NAV WITH MENU */
 
 .full-header-container {
@@ -183,6 +194,7 @@ html, body {
     flex-direction: column;
     justify-content: space-around;
     align-items: center;
+    padding: 40px 0;
 }
 
 .service-image {
@@ -204,8 +216,8 @@ html, body {
     align-items: center;
     justify-content: space-around;
     padding: 40px 20px;
-    background-color: white;
-    box-shadow: inset 0 2px 40px #c6e5ec, inset 0 -2px 2px white;
+    background-color: rgb(240, 240, 240);
+    /* box-shadow: inset 0 2px 40px #c6e5ec, inset 0 -2px 2px white; */
 }
 
 .about-text-section {
@@ -217,7 +229,13 @@ html, body {
 
 .about-text-section h3 {
     font-size: 25px;
-    color: rgb(0, 16, 105);
+    font-weight: normal;
+    font-family: 'Roboto Condensed', sans-serif;
+    color: rgb(50, 79, 109);
+}
+
+.about-text-section p {
+    color: #4f4f4f;
 }
 
 /* GOOGLE MAP CONTAINER */
